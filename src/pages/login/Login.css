@@ -1,0 +1,36 @@
+.landing-page {
+  display: flex;
+}
+
+.left-side-photo {
+  width: 60vw;
+  height: 100vh;
+  object-fit: cover;
+}
+.right-side {
+  background-color: #fee8b0;
+  width: 40vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 25vh;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+}
+.login-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
