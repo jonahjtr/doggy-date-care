@@ -1,0 +1,8 @@
+.left-side {
+  width: 60vw;
+}
+.left-side-photo {
+  width: 60vw;
+  height: 100vh;
+  object-fit: cover;
+}
