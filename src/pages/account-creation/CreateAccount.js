@@ -18,9 +18,9 @@ function CreateAccount() {
     <div className="create-account-page">
       <div className="create-account-card">
         <div className="title">Create account here!</div>
-        <div className="form portion">
+        <div className="form-card-create-account">
           <form onSubmit={handleSubmit}>
-            <div className="form-group">
+            <div className="form-group create-account">
               <label htmlFor="first name">first name:</label>
               <input
                 type="text"
@@ -29,7 +29,7 @@ function CreateAccount() {
                 onChange={(e) => setFirstName(e.target.value)}
               />
             </div>
-            <div className="form-group">
+            <div className="form-group-create-account">
               <label htmlFor="last name">last name:</label>
               <input
                 type="text"
@@ -38,7 +38,7 @@ function CreateAccount() {
                 onChange={(e) => setLastName(e.target.value)}
               />
             </div>
-            <div className="form-group">
+            <div className="form-group-create-account">
               <label htmlFor="username">username:</label>
               <input
                 type="text"
@@ -47,25 +47,29 @@ function CreateAccount() {
                 onChange={(e) => setUserName(e.target.value)}
               />
             </div>
-            <div className="form-group">
-              <label htmlFor="email">Email:</label>
+            <div className="form-group-create-account">
+              <label className="form-label" htmlFor="email">
+                Email:
+              </label>
               <input
+                className="form-input"
                 type="email"
                 id="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
-            <div className="form-group">
+            <div className="form-group-create-account">
               <label htmlFor="password">Password:</label>
               <input
+                className="form-input"
                 type="password"
                 id="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
-            <div className="form-group">
+            <div className="form-group-create-account">
               <label htmlFor="confirm password">confirm password:</label>
               <input
                 type="password"

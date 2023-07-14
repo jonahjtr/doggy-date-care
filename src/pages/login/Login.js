@@ -27,7 +27,7 @@ function Login() {
               <form className="login-form" onSubmit={handleSubmit}>
                 <div className="form-title">Log in!</div>
                 <div className="inputs">
-                  <div className="form-group">
+                  <div className="form-group-login">
                     <label htmlFor="email">Email:</label>
                     <input
                       type="email"
@@ -36,7 +36,7 @@ function Login() {
                       onChange={(e) => setEmail(e.target.value)}
                     />
                   </div>
-                  <div className="form-group">
+                  <div className="form-group-login">
                     <label htmlFor="password">Password:</label>
                     <input
                       type="password"
@@ -45,7 +45,7 @@ function Login() {
                       onChange={(e) => setPassword(e.target.value)}
                     />
                   </div>
-                  <div className="form-group checkbox-group">
+                  <div className="form-group-login checkbox-group">
                     <input
                       className="checkbox-input"
                       type="checkbox"
@@ -56,7 +56,9 @@ function Login() {
                     <label htmlFor="saveLoginInfo">Save my login info</label>
                   </div>
                 </div>
-                <button type="submit">Login</button>
+                <button className="submit-button" type="submit">
+                  Login
+                </button>
               </form>
             </div>
           </div>
