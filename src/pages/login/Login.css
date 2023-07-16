@@ -1,4 +1,7 @@
 .landing-page {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
   display: flex;
 }
 
@@ -41,9 +44,8 @@
     width: 250px;
   }
 }
-.form-card {
+.form-card-login {
   background-color: #9ca777;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,7 +54,7 @@
   height: 100%;
   border-radius: 25px;
 }
-.form-title {
+.form-title-login {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,22 +74,10 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-  & label {
-    padding: 3px;
-  }
-}
-
-.form-label {
-  font-weight: bold;
-}
-
-.form-group-login {
-  & input {
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-    padding: 8px;
-  }
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  padding: 8px;
 }
 
 .submit-button {
@@ -105,28 +95,15 @@
   color: white;
   background-color: #f97b22;
 }
-.login-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .checkbox-group {
+  border: black 1px solid;
   padding: 2px;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.checkbox-group input {
-  margin-right: 8px;
-  width: 10%;
-  outline: none;
-}
-
-.checkbox-group .form-label {
-  font-size: 14px;
-  cursor: pointer;
-}
 /* -------------------------          end of forms                   ---------------------------------------------------------- */
 .login-link {
   height: 25vh;

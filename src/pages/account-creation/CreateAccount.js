@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./CreateAccount.css";
+import dog from "../../media/create-account-page-picture.jpg";
 
 function CreateAccount() {
   const [firstName, setFirstName] = useState("");
@@ -16,12 +17,12 @@ function CreateAccount() {
   };
   return (
     <div className="create-account-page">
-      <div className="create-account-card">
-        <div className="title">Create account here!</div>
-        <div className="form-card-create-account">
-          <form onSubmit={handleSubmit}>
-            <div className="form-group create-account">
-              <label htmlFor="first name">first name:</label>
+      <div className="create-account-left-side">
+        <div className="form-create-account-card">
+          <div className="create-account-title">Create account here!</div>
+          <form className="form-create-account" onSubmit={handleSubmit}>
+            <div className="input-create-account">
+              <label htmlFor="first-name">First name:</label>
               <input
                 type="text"
                 id="first name"
@@ -29,8 +30,8 @@ function CreateAccount() {
                 onChange={(e) => setFirstName(e.target.value)}
               />
             </div>
-            <div className="form-group-create-account">
-              <label htmlFor="last name">last name:</label>
+            <div className="input-create-account">
+              <label htmlFor="last-name">Last name:</label>
               <input
                 type="text"
                 id="last name"
@@ -38,8 +39,8 @@ function CreateAccount() {
                 onChange={(e) => setLastName(e.target.value)}
               />
             </div>
-            <div className="form-group-create-account">
-              <label htmlFor="username">username:</label>
+            <div className="input-create-account">
+              <label htmlFor="username">Username:</label>
               <input
                 type="text"
                 id="username"
@@ -47,42 +48,54 @@ function CreateAccount() {
                 onChange={(e) => setUserName(e.target.value)}
               />
             </div>
-            <div className="form-group-create-account">
+            <div className="input-create-account">
               <label className="form-label" htmlFor="email">
                 Email:
               </label>
               <input
-                className="form-input"
                 type="email"
                 id="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
-            <div className="form-group-create-account">
+            <div className="input-create-account">
               <label htmlFor="password">Password:</label>
               <input
-                className="form-input"
                 type="password"
                 id="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
-            <div className="form-group-create-account">
-              <label htmlFor="confirm password">confirm password:</label>
+            <div className="input-create-account">
+              <label htmlFor="confirm password">Confirm password:</label>
               <input
                 type="password"
-                id="confirm password"
+                id=" confirm password"
                 value={confirmedPassword}
                 onChange={(e) => setConfirmedPassword(e.target.value)}
               />
-              <div className="button-area">
-                <button type="submit">CreateAccount</button>
+              <div className="input-create-account-button-checkbox">
+                <input
+                  type="checkbox"
+                  id="saveLoginInfo"
+                  checked={saveLoginInfo}
+                  onChange={(e) => setSaveLoginInfo(e.target.checked)}
+                />
+                <label htmlFor="saveLoginInfo">Save my login info</label>
               </div>
+            </div>
+            <div className="input-create-account-button-submit">
+              <button classname="submit-button" type="submit">
+                CreateAccount
+              </button>
             </div>
           </form>
         </div>
+      </div>
+      <div className="right-side-create-account">
+        <img className="imgimg" src={dog} alt="dog" />
       </div>
     </div>
   );
