@@ -12,14 +12,14 @@ function CreateAccount() {
   const [saveLoginInfo, setSaveLoginInfo] = useState(false);
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Perform login logic here using email and password values
+
     console.log("Submitted:");
   };
   return (
     <div className="create-account-page">
       <div className="create-account-left-side">
-        <div className="form-create-account-card">
-          <div className="logo-create-account">logo here</div>
+        <header className="logo-create-account">logo here</header>
+        <main className="form-create-account-card">
           <div className="create-account-title">Create account here!</div>
           <form className="form-create-account" onSubmit={handleSubmit}>
             <div className="input-create-account">
@@ -93,11 +93,11 @@ function CreateAccount() {
               </button>
             </div>
           </form>
-        </div>
+        </main>
       </div>
-      <div className="right-side-create-account">
+      <section className="right-side-create-account">
         <img className="imgimg" src={dog} alt="dog" />
-      </div>
+      </section>
     </div>
   );
 }
