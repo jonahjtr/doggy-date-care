@@ -45,9 +45,8 @@ function Login() {
                       onChange={(e) => setPassword(e.target.value)}
                     />
                   </div>
-                  <div className="input-group-login checkbox-group">
+                  <div className="input-group-checkbox-login">
                     <input
-                      className="checkbox-input"
                       type="checkbox"
                       id="saveLoginInfo"
                       checked={saveLoginInfo}
