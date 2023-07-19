@@ -1,8 +1,12 @@
 .navbar {
+  position: sticky;
+  top: 0;
+  color: #607056;
   display: grid;
   grid-template-columns: 50vw 45vw 5vw;
   height: 55px;
   background-color: #7c9070;
+  border-bottom: solid 1px #607056;
 }
 .nav-bar-logo {
   display: flex;
@@ -34,7 +38,8 @@
   border-radius: 5px;
 }
 .nav-bar-menu-item-link {
-  color: black;
+  color: #607056;
+
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -86,6 +91,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-right: 15px;
 }
 .nav-bar-item-person-icon {
   display: flex;

@@ -4,8 +4,15 @@ import NavBar from "../../components/NavBar";
 
 const HomePage = () => {
   return (
-    <div className="home">
-      <NavBar />
+    <div className="homepage">
+      <header className="homepage-navbar">
+        <NavBar />
+      </header>
+      <body className="homepage-body">
+        <aside className="left-homepage"> left</aside>
+        <main className="middle-homepage">main</main>
+        <aside className="right-homepage">right</aside>
+      </body>
     </div>
   );
 };

@@ -1,2 +1,26 @@
-.home {
+.homepage {
+  overflow: hidden;
+}
+.homepage-navbar {
+  position: fixed;
+}
+.homepage-body {
+  display: grid;
+  grid-template-columns: 20vw 60vw 20vw;
+}
+.left-homepage {
+  margin-top: 56px;
+  height: 100%;
+  background-color: #607056;
+}
+
+.middle-homepage {
+  margin-top: 56px;
+  background-color: #7c9070;
+  min-height: 100vh;
+}
+.right-homepage {
+  margin-top: 56px;
+  height: 100%;
+  background-color: #607056;
 }
