@@ -1,6 +1,7 @@
 import React from "react";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
+import searchIcon from "../media/icon-search.png";
 const NavBar = () => {
   return (
     <nav className="navbar">
@@ -21,7 +22,13 @@ const NavBar = () => {
           <div>
             {" "}
             <input placeholder="Search" className="nav-bar-item-input"></input>
-            <button>{`>`}</button>
+            <button>
+              <img
+                className="nav-bar-search-icon"
+                src={searchIcon}
+                alt="searchicon"
+              />
+            </button>
           </div>
         </form>
       </section>
