@@ -10,7 +10,7 @@ const DogProfileCard = (props) => {
       <aside className="dpc-information-section">
         <section className="dpc-main-information">
           <h1>{props.name}</h1>
-          <h3>{props.nickName}</h3>
+          <h3>{props.nickname}</h3>
         </section>
         <section className="dpc-all-other-links-section">
           <container className="dpc-all-other-links-container">
