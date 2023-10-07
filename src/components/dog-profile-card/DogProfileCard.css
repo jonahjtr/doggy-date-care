@@ -2,9 +2,10 @@
   display: flex;
   align-items: center;
   margin: 25px 0;
-  border: solid 1px;
+  border: solid 1px #607056;
   width: 80%;
   height: 200px;
+  background-color: #7c9070;
 }
 .dpc-profile {
   display: flex;

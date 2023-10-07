@@ -114,3 +114,44 @@
   width: 40vw;
   height: 100vh;
 }
+/* ------------------------------------------------------------------------------ */
+@media (min-width: 768px) and (max-width: 1150px) {
+  .imgimg {
+    width: 0px;
+    height: 0px;
+  }
+  .create-account-left-side {
+    height: 100%;
+    width: 100%;
+  }
+  .right-side-create-account {
+    height: 0;
+    width: 0vh;
+  }
+}
+@media (max-width: 767px) {
+  .imgimg {
+    width: 0px;
+    height: 0px;
+  }
+  .right-side-create-account {
+    height: 0;
+    width: 0vh;
+  }
+  .form-create-account-card {
+    height: 80vh;
+    min-width: 78vw;
+    width: 80vw;
+  }
+  .create-account-title {
+    padding-bottom: 5%;
+    font-size: 200%;
+  }
+  .form-create-account {
+    width: 100%;
+    height: 80%;
+  }
+  .create-account-left-side {
+    width: 100%;
+  }
+}
